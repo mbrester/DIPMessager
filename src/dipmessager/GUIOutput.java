@@ -4,22 +4,16 @@
  * and open the template in the editor.
  */
 package dipmessager;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author Mitch
  */
-public class DIPMessager {
+public class GUIOutput implements MessageOutput{
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        MessageManager mm = new MessageManager();
-       
-        mm.ProsessMessage();
-        
-        
+    @Override
+    public void sendMessage(String message) {
+       JOptionPane.showMessageDialog(null, message);
     }
     
 }

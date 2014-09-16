@@ -9,17 +9,15 @@ package dipmessager;
  *
  * @author Mitch
  */
-public class DIPMessager {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        MessageManager mm = new MessageManager();
-       
-        mm.ProsessMessage();
-        
+public class MessageManager {
+    private MessageInput input = new KeyboardInput();
+    private MessageOutput output = new ConsoleOutput();
+    
+    public void ProsessMessage(){
+        input.setMessage();
+        output.sendMessage(input.getMessage());
         
     }
+    
     
 }
