@@ -17,7 +17,7 @@ public class DIPMessager {
     public static void main(String[] args) {
         MessageManager mm = new MessageManager();
        
-        mm.ProsessMessage();
+        mm.prosessMessage();
         
         
     }

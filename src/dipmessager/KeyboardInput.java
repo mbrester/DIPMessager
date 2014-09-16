@@ -18,7 +18,7 @@ public class KeyboardInput implements MessageInput {
     
     @Override
     public void setMessage() {
-        System.out.println("Enter a Messige");
+        System.out.println("Enter a Message");
         message = keyboard.nextLine();
         
     }

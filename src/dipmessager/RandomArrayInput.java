@@ -16,7 +16,7 @@ public class RandomArrayInput implements MessageInput{
     private String message;
     private String[] random = {"Hello","Welcome","You are great","You have eyes","Ummm W"};
     private Random rand = new Random();
-    int randomInt = rand.nextInt(6);
+    int randomInt = rand.nextInt(5);
      @Override
     public void setMessage() {
       this.message = random[randomInt];

@@ -13,7 +13,7 @@ public class MessageManager {
     private MessageInput input = new KeyboardInput();
     private MessageOutput output = new ConsoleOutput();
     
-    public void ProsessMessage(){
+    public void prosessMessage(){
         input.setMessage();
         output.sendMessage(input.getMessage());
         
