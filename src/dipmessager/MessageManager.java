@@ -10,11 +10,18 @@ package dipmessager;
  * @author Mitch
  */
 public class MessageManager {
-    private MessageInput input = new KeyboardInput();
-    private MessageOutput output = new ConsoleOutput();
+    private MessageInput input; 
+    private MessageOutput output; 
+
+    public MessageManager(MessageInput input, MessageOutput output) {
+        this.input = input;
+        this.output = output;
+    }
+    
+    
+    
     
     public void prosessMessage(){
-        input.setMessage();
         output.sendMessage(input.getMessage());
         
     }

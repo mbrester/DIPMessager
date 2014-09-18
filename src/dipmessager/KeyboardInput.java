@@ -16,13 +16,11 @@ public class KeyboardInput implements MessageInput {
     private String message;
     Scanner keyboard = new Scanner(System.in);
     
-    @Override
-    public void setMessage() {
+    public String getMessage(){
+        
+        
         System.out.println("Enter a Message");
         message = keyboard.nextLine();
-        
-    }
-    public String getMessage(){
         return message;
     }
     

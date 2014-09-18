@@ -10,6 +10,5 @@ package dipmessager;
  * @author Mitch
  */
 public interface MessageInput {
-    public abstract void setMessage();
     public abstract String getMessage();
 }
